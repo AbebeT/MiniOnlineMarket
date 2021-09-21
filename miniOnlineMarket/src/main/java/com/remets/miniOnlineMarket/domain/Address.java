@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -13,14 +14,13 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Person {
+public class Address {
     @Id
     private long id;
-    private long personId;
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String email;
-    private String address;
-    private String role;
+    private String country;
+    private String state;
+    private  String city;
+    private String streetAddress;
+    private String zipCode;
+
 }
